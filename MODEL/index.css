@@ -1,0 +1,310 @@
+﻿/* This is the CSS code used to display the Web view of the image markup project. */
+
+html{
+    margin: 0;
+    padding: 0;
+}
+
+.AnnMenuItem:hover{
+font:red;
+}
+
+body{
+ font-family: "Times New Roman", verdana, sans-serif;
+color:#646464;
+}
+
+
+
+h1{
+display:none;    
+margin: 0;
+    border-color: #d0d0f0 #a0a0d0 #a0a0d0 #d0d0f0;
+    border-width: 2px;
+    border-style: solid;
+    background-color: #bbbbdd;
+    color: #000000;
+    text-align: center;
+    padding: 0.5em;
+    font-size: 140%; /*2003*/
+}
+
+#ImageContainer{
+    margin: 0;
+    padding: 0;
+}
+
+#Image{
+    margin: 1em;
+    padding: 0;
+    border-width: 3px;
+    border-style: solid;
+    border-color: #646464;
+}
+
+div#CurrentAnnotation{
+    display: none;
+}
+
+div.Annotation{
+display:none;
+    position: absolute;
+  /*  width: auto;*/
+    background-color: #ffffff;
+    color: #000000;
+/*    border-color: f0; */
+/*    border-width: 2px; */
+/*    border-style: outset; */
+    border-style: solid;
+    border-width: 1px;
+    border-color: #d1c7bf;
+/*border-top-color:white;*/
+padding: 0;
+margin:0px;
+align:center;
+text-align:center;
+    width: 180px;
+}
+
+div.AnnTitleBar{
+    border-bottom-style: solid;
+    border-width: 0px;
+border-top-color:d1c7bf;
+    border-bottom-color: red;
+background-image:url('http://www.1001metm.com/auvergne/images/alpha.png');
+  background-position: top right;
+  background-repeat: no-repeat;"
+width:180px;
+/*margin-right:30px;*/
+height:20px;
+
+
+}
+
+div.PopupCloser{
+/* Floating right causes the containing element to stretch to its max-width. :-( */
+    float: left;
+    width: 1em;
+    margin-right: 0;
+    text-align: center;
+    border-style: solid;
+    border-width: 0px;
+    border-color: #a0a0d0 #d0d0f0 #d0d0f0 #a0a0d0;
+    font-variant: small-caps;
+    font-stretch: extra-expanded;
+    cursor: pointer;
+	padding-right: 1px;
+height:50px;
+}
+
+div.AnnText{
+    border-style: dotted;
+    border-width: 1px;
+    border-color: white;
+	border-top-color:red;
+border-bottom-color:white;
+font-size:1px;
+/*margin-bottom:8px;*/
+}
+
+#AnnMenuContainer{
+	
+border-color:#646464;
+    border-width: 10px;
+    border-style: solid;
+    background-color: white;
+    color: #646464;
+    max-width: 33%;
+/* Position it off-screen initially, to avoid flicker. */
+    left: -33%;
+margin-top : 0px;
+padding : 0px;
+overflow : auto;
+width:300px;
+/** background-color:white; background-image: url("http://www.1001metm.com/auvergne/images/fondboitebas.png"); background-position: right bottom; background-repeat: no-repeat; - retiré par rubi le 25-06-12 pour éviter le flottement inopportun de l'image **/
+
+}
+/* 20110323
+
+#AnnMenuBas{
+    position: absolute;
+    width: auto;
+    /*border-color: #d0d0f0 #a0a0d0 #a0a0d0 #d0d0f0;
+border-color:#646464;
+    border-width: 10px;
+    border-style: solid;
+    background-color: #646464;
+    color: #000000;
+    max-width: 33%;
+/* Position it off-screen initially, to avoid flicker. 
+}
+*/
+
+/*#AnnMenuTitle{
+z-index: 10;
+background-color:#00FF00;
+width:300px;
+height:100%;
+
+/* background-image: url('http://www.1001metm.com/auvergne/images/rondfermer.png') ;
+background-position: right top;
+ background-repeat-x: no-repeat;
+
+    cursor: move;
+    margin: 0px;
+    text-align: right;
+/*vertical-align : middle;
+/*margin-right:0px;
+width:300px;
+height:100%;
+
+}
+*/
+
+ div.AnnTitlebar{
+    cursor: move;
+padding:0px;
+border-color:white;
+    text-align: center;
+/*background-image: url('../images/alpha.png') no-repeat;*/
+width:180px;
+height:20px;
+font-size:11px;
+align:center;
+/*margin-right:10px;*/
+/*margin-top:2px*/
+margin-left:0px;
+
+}
+
+div.AnnTitle{
+margin-top:0px;
+border:0px;
+vertical-align:middle;
+height:20px;
+color:#646464;
+background-image: url('http://www.1001metm.com/auvergne/images/alpha.png') no-repeat;
+}
+
+#AnnMenu{
+z-index: 1;
+height:100%;
+
+
+    font-family: "Times New Roman", verdana, sans-serif;
+    list-style-type: none;
+    background-color: #ffffff;
+    color: #646464;
+   /** overflow: auto; - retiré par rubi le 25-06-12 pour corriger le double ascenceur **/
+  /** background-color:white; background-image: url("http://www.1001metm.com/auvergne/images/fondboitebas.png"); background-position: right bottom; background-repeat: no-repeat; - retiré par rubi le 25-06-12 pour éviter le flottement inopportun de l'image**/
+margin:0px;
+padding:0px;
+
+}
+.CategoryTitleClosed{
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#AnnMenu>li{
+    padding: 0.25em;
+    margin: 0.2em;
+    cursor: pointer;
+font-size:12px; 
+}
+
+.AnnSubmenu{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.AnnSubmenu>li{
+/*color:#646464;*/
+    margin-left: 1.5em;
+list-style-image: url(../images/flecheRouge.png);
+}
+
+.AnnSubmenu>li:hover{
+color:#B82125;
+margin-left: 1.5em;
+list-style-image: url(../images/flecheRouge.png);
+}
+
+/*
+.AnnSubmenu>li:visited{
+/*color:#B82125;*/
+    margin-left: 1.5em;
+list-style-image: url(../images/flecheRouge.png);
+}
+*/
+
+
+.AnnMenuItem{
+    cursor: pointer;
+    color: #000000;
+    background-color: #ffffff;
+}
+
+.HighlightedAnnMenuItem{
+    cursor: pointer;
+/*    background-color: #bbbbdd;*/
+    color:#B82125;
+
+}
+
+.SelectedAnnMenuItem{
+    cursor: pointer;
+	font-style:bold;
+    background-color:#ffffff ;
+    color:#B82125;
+
+}
+
+
+div.SelectedArea{
+   border-width: 2px;
+    border-style: solid;
+/*	border-color: #e4dec1;*/
+}
+
+div.HighlightedArea{
+    border-width: 2px;
+    border-style: solid;
+}
+
+p{
+    margin: 0.25em;
+}
+
+div.Para{
+    margin: 0.25em;
+border-bottom-color:white;
+}
+
+div.Stanza{
+    margin: 0.5em;
+}
+
+div.BlockCit{
+    margin: 1em;
+}
+
+div.BlockCitBibl{
+    text-align: right;
+}
+
+div#Zoom{
+    display: none;
+    overflow: hidden;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    border-style: outset;
+    border-width: 3px;
+    border-color: #ffffff;
+}   
+
+div#Zoom img{
+    position: relative;
+}

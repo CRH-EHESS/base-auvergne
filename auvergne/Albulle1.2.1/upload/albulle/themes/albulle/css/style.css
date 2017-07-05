@@ -1,0 +1,256 @@
+/*
+ * Fichier : style.css
+ * Date : 20/10/2008
+ * Auteur : SamRay1024 - http://jebulle.net
+ *
+ * AlBulle CSS - Style uniquement - A partir de la version 1.1
+ *
+ */
+
+/**
+ * STYLES GENERAUX
+ */
+body{
+color:#646464;
+}
+
+h3 {
+   border-bottom: 2px dotted red;
+    color:red;
+    font-family: "Times New Roman",verdana,sans-serif;
+    font-size: 18pt;
+    font-variant: small-caps;
+}
+
+
+/* corps du fichier */
+.al_body					{ background-color: #fff; font-size: 62.5%; }
+
+/* pour tout le monde */
+#albulle * {
+ font-family: "Times New Roman",verdana,sans-serif;    
+color:					#9b9b9b;
+    margin:					0px;
+    /*padding:				0px;*/
+}
+
+/* protection des éléments pour les tailles en ems */
+input, select, th, td { font-size: 1em; }
+li li, li p, td p, blockquote p { font-size: 1em; }
+
+/* liens */
+#albulle a					{ text-decoration: none; }
+#albulle a:hover			{ color: #a6793d; }  
+
+/* images */
+#albulle img				{ border: 0px;}
+
+/**
+ * ELEMENTS SIMPLES
+ */
+
+/* Entête de la page + autres qui ont le même style */
+#albulle #entete,
+#albulle .texte,
+#albulle .vignette,
+#albulle .vignetteDiapo,
+#albulle #diapo,
+
+
+#albulle h1 span,
+#albulle h2					{ }
+#albulle h1					{ background: url(../images/logo.png) no-repeat center right; font-size: 2.4em; }
+#albulle h2					{ font-size: 1.1em; }
+
+
+/* cadre d'accueil si aucun dossier sélectionné */
+#albulle .texte {
+	font-size:				1.2em;
+	text-align:				justify;
+}
+
+#albulle .texte h5			{ font-size: 1.2em; }
+
+#albulle .puceAjout,
+#albulle .puceRetrait,
+#albulle #puceAjoutPage,
+#albulle #puceRetraitPage	{ background-repeat: no-repeat; background-position: 50% 50%; }
+
+#albulle .puceAjout			{ background-image: url(../images/puce_ajout.png); }
+#albulle #puceAjoutPage		{ background-image: url(../images/puce_retrait.png); }
+
+#albulle .puceRetrait		{ background-image: url(../images/puce_retrait.png); }
+#albulle #puceRetraitPage	{ background-image: url(../images/puce_ajout.png); }
+
+/* le copyright */
+#albulle .copyright			{ text-align: center; }
+
+/**
+ * MENU DES DOSSIERS ET DU PANIER
+ */
+
+/* pour les deux cadres */
+#albulle .dossiers,
+#albulle .panier {
+	background-image: url(../images/fondboitecentre.png);
+	
+	border:					1px solid #646464;
+	font-size:				1.2em;
+	text-align:				center;
+margin:0px;
+width:295px;
+padding:0px;
+border-color:#646464;
+color : #a6793d;
+
+}
+
+/* Titres des cadres */
+.titre		{  
+margin: 5; padding: 5;
+border-bottom : 1px dotted red ;
+font-family: "Times New Roman", verdana, sans-serif;
+color: #a6793d ;
+font-size: 18pt ;
+height:19px;
+text-align:				left;
+}
+
+
+/* cadre des dossiers pour les photos */
+#albulle .dossiers			{ background-color: #646464; border-color:#646464;}
+
+/* cadre du panier */
+#albulle .panier			{ background-color: #646464; border-color:#646464;}
+
+#albulle .panier p			{ font-size: 0.9em; }
+#albulle .panier .plein		{ color: red; }			/* Le texte qui indique que le panier est plein */
+#albulle .asterisque		{ font-style: italic; }
+
+/* menu des dossiers et du panier */
+#albulle .menu				{ text-align: left;
+background-color: #64664;
+ }
+#albulle .menu #courant 	{ font-weight: bold;color:#B82125;  }
+
+/* menu des sous-dossiers */
+#albulle .menu ul li {
+	
+}
+
+/* icones des puces des items */
+#albulle .puceDossier,
+#albulle .puceVide,
+#albulle .puceRemonter,
+#albulle .puceNoPhoto,
+#albulle .puceDownload,
+#albulle .puceVoir,
+#albulle .puceVider,
+#albulle .complement {
+	list-style-type:		none;
+	background-repeat:		no-repeat;
+
+}
+/* chemin des icones */
+
+#albulle .puceDossier		{ list-style-image: url(../images/puce_dossier_photo.png);  }
+#albulle .puceVide			{ list-style-image: url(../images/puce_dossier_photo.png); }
+#albulle .puceRemonter		{ list-style-image: url(../images/puce_dossier_photo.png); }
+#albulle .puceNoPhoto		{ background-image: url(../images/puce_aucune_photo.png); }
+#albulle .puceDownload		{ background-image: url(../images/puce_download.png); }
+#albulle .puceVoir			{ background-image: url(../images/puce_explorer.png); }
+#albulle .puceVider			{ background-image: url(../images/puce_poubelle.png); }
+
+
+/**
+ * BARRE DE MENU
+ */
+
+#albulle .menubar			{ font-size: 1.2em; }
+
+/* liens vers les pages */
+#albulle .btn-page,
+#albulle .bouton,
+
+#albulle .btn-page,
+#albulle .bouton		{/* background-image: url(../images/fond_menu.png);*/ }
+
+#albulle .bouton .tout	{ background: url(../images/puce_ajout.png) no-repeat center center; }
+#albulle .bouton .rien	{ background: url(../images/puce_retrait.png) no-repeat center center; }
+
+/* page courante */
+#albulle .btn-page-active {
+	border:					1px solid #000;
+	background-color:		#aaa;
+	font-weight:			bold;
+	color:					#c33;
+}
+
+
+/**
+ * Le formulaire de défilement automatique
+ */
+#albulle .defilement 			{ font-size: 1.1em; text-align: left; }
+#albulle .defilement fieldset	{ border: 0px; }
+#albulle .defilement input		{ border: 1px solid #aaa; }
+
+
+/**
+ * VIGNETTES
+ */
+
+/* Une vignette contient : une image miniature, les infos de l'image qu'elle représente
+   un lien pour l'ajouter au panier. */
+
+/* cadre de la vignette */
+#albulle .vignette,
+#albulle .vignetteDiapo		{ text-align: center;border : 1px solid; color: #d9d1ca; }
+
+/* survol de la vignette, et des boutons */
+#albulle .vignette:hover,
+#albulle .bouton:hover,
+#albulle .btn-page:hover,
+#albulle #diapoCourante		{ background-color: #d9d1ca; background-image: none; border: 1px solid; color: #d9d1ca; }
+
+/* classe de l'image dans la vignette */
+#albulle .miniature			{ border: 1px solid black; }
+#albulle #defaut			{ border: none; }
+
+/* fiche infos de l'image */
+#albulle .infosImg			{ text-align: left; }
+
+/* La classe de la diapo utilisé en mode diaporama */
+#albulle #diapo				{ text-align: left; }
+#albulle #diapo #image		{ border: 1px solid #d9d1ca;padding:5px; }
+
+/* Liens précédente / suivante du diaporama */
+#albulle #diapo .navDiapos a:hover	{ font-weight: normal; }	/* pour annuler l'effet du survol des liens qui provoque un déplacement des icônes précédentes/suivante */
+#albulle #diapo .precedente span	{ background: url(../images/precedente.png) no-repeat center center; }
+#albulle #diapo .suivante span		{ background: url(../images/suivante.png) no-repeat center center; }
+
+/* La fiche signalétique de l'image affichée */
+#albulle .informations {display:none;  }
+#albulle #diapo .informations .fiche {
+display:none;
+	text-align:				left;
+	font-size:				1.1em;
+}
+
+#albulle #diapo .informations span { font-weight: bold; text-decoration: underline; }
+#albulle #diapo .fiche { border-left: 4px solid #c33; background-color: #ece6f5; }
+#albulle #diapo .fiche ul { list-style-type: none;  }
+#albulle #diapo .fiche ul span { text-decoration: none; }
+
+
+/**
+ * RAPPEL DES SOUS-DOSSIERS
+ */
+#albulle #rappel ul				{ font-size: 1.2em; }
+
+a {color: #646464 ;
+}
+a.menu_h {text-decoration: none;}
+a.menu_h:link {text-decoration: none;}
+a.menu_h:hover {text-decoration: none;}
+
+/* EOF */
