@@ -292,7 +292,7 @@ include 'footer.php';
     <p class="contenttimes">&nbsp;<br />
       ¿Por qué encontramos en las iglesias románicas tantos capiteles con figuras multiformes tan diversas entre sí? ¿Dónde se ubican exactamente? ¿Cómo se disponen en el lugar sagrado y qué relaciones se establecen dentro de esa red de imágenes? Para abordar estas preguntas, este sitio propone herramientas y análisis centrados en cinco iglesias de la región Auvergne, en el centro de  Francia (Saint-Pierre de Mozat, Saint-Nectaire, Notre-Dame-du-Port en Clermont-Ferrand, Notre-Dame d'Orcival y Saint-Marcellin de Chanteuges)&nbsp;:</p>
     <ul>
-<li class="contenttimes"><strong><a href="http://www.1001metm.com/auvergne/sommaire_sp.php" target="_blank">Un <em>Corpus topo-fotográfico de los capiteles</em></a></strong> presenta, para cada iglesia, un mapa que permite visualizar, localizar y comparar la totalidad de los capiteles del edificio.<br />&nbsp;</li>
+<li class="contenttimes"><strong><a href="/sommaire_sp.php" target="_blank">Un <em>Corpus topo-fotográfico de los capiteles</em></a></strong> presenta, para cada iglesia, un mapa que permite visualizar, localizar y comparar la totalidad de los capiteles del edificio.<br />&nbsp;</li>
               <center>
                 <p><a href="sommaire.php" target="_blank"><img src="img/plan-accueil250.jpg" width="250" height="158" /></a><br />
                 </p>

@@ -391,7 +391,7 @@ definir( 'JB_AL_EXTENSION_FICHIERS', '.zip' );
  * Permet d'afficher un bouton de retour vers votre site depuis la barre de navigation.
  * Laissez vide pour ne pas utiliser cette fonctionnalité.
  */
-definir( 'JB_AL_HOME_HREF', 'http://www.1001metm.com/auvergne/' );
+definir( 'JB_AL_HOME_HREF', '/auvergne/' );
 /**
  * Texte du lien de retour vers votre site.
  *

@@ -2,7 +2,7 @@
 /*
 dans le htm d'imt (en bas)
 
-<div style="background-color:white;background-image:url('http://www.1001metm.com/auvergne/images/fondboitebas.png');background-position: bottom right;  background-repeat: no-repeat;">BAS</div></div>
+<div style="background-color:white;background-image:url('/auvergne/images/fondboitebas.png');background-position: bottom right;  background-repeat: no-repeat;">BAS</div></div>
 <div id="Zoom"
 
 au dessus : 

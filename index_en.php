@@ -292,7 +292,7 @@ include 'footer.php';
 	  <p class="contenttimes">&nbsp;<br />
      In Romanesque churches, why are there so many capitals carved with such diverse and multiformed images ? Where are these capitals located ? How are they connected with each other and how do they relate to sacred space ? This site attemps to respond to these questions by offering new tools for the analysis of five churches from Auvergne (Saint-Pierre de Mozat, Saint-Nectaire, Notre-Dame-du-Port at Clermont-Ferrand, Notre-Dame d'Orcival and Saint-Marcellin de Chanteuges). The site comprises two parts&nbsp;:</p>
     <ul>
-<li class="contenttimes"><strong><a href="http://www.1001metm.com/auvergne/sommaire_en.php" target="_blank">A <em>topo-photographic corpus of capitals</em></a></strong> supplies a map enabling the user to visualize, locate and compare all the capitals of the edifice.<br />&nbsp;</li>
+<li class="contenttimes"><strong><a href="/sommaire_en.php" target="_blank">A <em>topo-photographic corpus of capitals</em></a></strong> supplies a map enabling the user to visualize, locate and compare all the capitals of the edifice.<br />&nbsp;</li>
               <center>
                 <p><a href="sommaire.php" target="_blank"><img src="img/plan-accueil250.jpg" width="250" height="158" /></a><br />
                 </p>

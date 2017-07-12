@@ -121,7 +121,7 @@ margin-top : 0px;
 padding : 0px;
 overflow : auto;
 width:300px;
-/** background-color:white; background-image: url("http://www.1001metm.com/auvergne/images/fondboitebas.png"); background-position: right bottom; background-repeat: no-repeat; - retiré par rubi le 25-06-12 pour éviter le flottement inopportun de l'image **/
+/** background-color:white; background-image: url("/auvergne/images/fondboitebas.png"); background-position: right bottom; background-repeat: no-repeat; - retiré par rubi le 25-06-12 pour éviter le flottement inopportun de l'image **/
 
 }
 /* 20110323
@@ -146,7 +146,7 @@ background-color:#00FF00;
 width:300px;
 height:100%;
 
-/* background-image: url('http://www.1001metm.com/auvergne/images/rondfermer.png') ;
+/* background-image: url('/auvergne/images/rondfermer.png') ;
 background-position: right top;
  background-repeat-x: no-repeat;
 
@@ -183,7 +183,7 @@ border:0px;
 vertical-align:middle;
 height:20px;
 color:#646464;
-background-image: url('http://www.1001metm.com/auvergne/images/alpha.png') no-repeat;
+background-image: url('/auvergne/images/alpha.png') no-repeat;
 }
 
 #AnnMenu{
@@ -196,7 +196,7 @@ height:100%;
     background-color: #ffffff;
     color: #646464;
    /** overflow: auto; - retiré par rubi le 25-06-12 pour corriger le double ascenceur **/
-  /** background-color:white; background-image: url("http://www.1001metm.com/auvergne/images/fondboitebas.png"); background-position: right bottom; background-repeat: no-repeat; - retiré par rubi le 25-06-12 pour éviter le flottement inopportun de l'image**/
+  /** background-color:white; background-image: url("/auvergne/images/fondboitebas.png"); background-position: right bottom; background-repeat: no-repeat; - retiré par rubi le 25-06-12 pour éviter le flottement inopportun de l'image**/
 margin:0px;
 padding:0px;
 
