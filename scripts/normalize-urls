@@ -1,0 +1,14 @@
+#!/bin/bash -eu
+# Rectifie les URLs dans les fichiers en entrée :
+#  - remplace les accents des URLs Albulle par des lettres non accentuées ;
+#  - rajoute les extensions ".jpg" manquantes à la fin des images "01_".
+# Usage :
+#   normalize-urls file [file…]
+
+# Enlève les accents des URLs
+ruby -i -an -e 'require "active_support"; puts $_.gsub(/="\/auvergne\/Albulle1.2.1\/upload([^"]*)"/) { |s| I18n.transliterate(s.unicode_normalize) }' $@
+
+# Ajoute .jpg à la fin des URLs en `01_`
+ruby -i -an -e 'puts $_.gsub(/\/01_\"/, "/01_.jpg\"")' $@
+
+# Supprime les fichiers de sauvegarde
