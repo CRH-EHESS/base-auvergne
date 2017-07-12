@@ -1,0 +1,27 @@
+#!/usr/bin/env ruby
+# Renomme les fichiers en entrée pour supprimer les accents du chemin.
+# Usage :
+#   rename-to-ascii file [file…]
+
+require 'active_support'
+require 'fileutils'
+
+ARGV.each do |source_filename|
+  source_directory = File.dirname(source_filename)
+  filename_without_accents = I18n.transliterate(source_filename.unicode_normalize)
+  directory_without_accents = File.dirname(filename_without_accents)
+
+  # Create new directory without accent if needed
+  FileUtils.mkdir_p(directory_without_accents)
+
+  # Rename file
+  File.rename(source_filename, filename_without_accents)
+
+  # Remove directory if now empty
+  working_directory = source_directory
+  while Dir.empty?(working_directory)
+    parent_directory = File.dirname(working_directory)
+    Dir.delete(working_directory)
+    working_directory = parent_directory
+  end
+end
