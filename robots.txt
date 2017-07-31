@@ -1,0 +1,1 @@
+sitemap:http://auvergne.huma-num.fr/sitemap.xml
